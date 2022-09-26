@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+
+    background:black;
+    font-family: 'Montserrat';
+    height: 100vh;
+}
+
+a {
+    color: #ede8df;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.child{padding-left: 1rem;}
+
+.log {
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left:1em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 1.5em;
+    cursor: pointer;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display:none;
+    place-content: center;
+    z-index: 1;
+}
+
+ul li a {
+    color:rgba(6, 198, 241, 0.614);
+    padding: 2em;
+    display: block;
+    font-size: 1.4rem;
+    margin-left: -4em;
+}
+
+.exit svg {
+    width: 2.5em;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    cursor: pointer;
+}
+
+.active a {
+    color: rgb(45, 173, 227);
+}
+
+
+h1{
+    text-align: left;
+left:20px;
+position: relative;
+color: rgba(6, 198, 241, 0.614);
+font-size: 12px;
+}
+h1:before{
+    content:"";
+    width:20%;
+    height:4px;
+    background-color: rgba(6, 198, 241, 0.614);;
+    position: absolute;
+    top:10;
+    left:7%;
+    
+}
+button{
+   margin-left:10px;
+    width: 150px;
+    height: 60px;
+    border-radius: 20%;
+    padding: 1em;
+}
+.btn-container{
+font-size: 1.2em;
+cursor: pointer;
+font-weight: 600;
+
+position: relative;
+}
+
+.cta{display: block;
+margin: .5em;
+padding: .5em;
+text-align: center;
+background:rgba(6, 198, 241, 0.614);
+color: rgb(240, 248, 255);
+
+}
+.outline{
+    
+ display: block;
+margin: .5em;
+padding: .5em;
+text-align: center;
+background:white;
+color:black;
+border: 5px solid rgba(165, 144, 42, 0.614);
+
+}
+.plant-container{
+    position: absolute;
+overflow:hidden;
+width:100%;
+height: 100vh;
+z-index: -1;
+right: 0;
+bottom: 0;
+right:0;
+}
+.ninja {
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    right: -1%;
+    bottom: 5%;
+    top: 30px;
+}
+.open-nav{display: grid;
+}
+.life{
+    background: url("life-\ style.png");
+   opacity:50%; 
+   width: 40%;
+   height: 40vh;
+   top:10%;
+   position: absolute;
+   left: 5px;
+   z-index: -1;
+}
+@media(min-width: 500px){
+    body{
+        font-size: 18px;
+    }
+    .exit, .menu{
+        display:none;
+    }
+    ul{
+        display: flex;
+        height: unset;
+        background:none;
+        position: unset;
+
+    }
+ul li a{
+    margin-left:unset;
+    font-size: 0.9em;
+    padding: 0.5em;
+
+}
+h1 {
+    font-size: 1.5em;
+
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+.cta {
+    padding: .7em 1.2em;
+}
+.outline {
+    margin-left: 1em;
+}
+}
